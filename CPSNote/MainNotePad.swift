@@ -13,17 +13,23 @@ struct MainNotePad: View {
     var body: some View {
     
     NavigationStack {
-
+    
 				Form {
 
 				TextField("Title", text: $title)
 				.lineLimit(1)
 				
+			
+				
 					TextField("Note", text: $actTxt, axis: .vertical)
 					.lineLimit(100)
+					
+					
 			
 			}.navigationTitle("CPSNote")
    .navigationBarTitleDisplayMode(.inline)
+	
+   .toolbarBackground(Color.clear)
    
    .toolbar {
    
