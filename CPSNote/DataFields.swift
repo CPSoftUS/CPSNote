@@ -1,11 +1,12 @@
 import SwiftData
 import Foundation
+import Observation
 
 @Model
 class DataFields
 {
 		var date: Date?
-		var title: String?
+		var title: String
 		var actTxt: String?
 		
 	init(date: Date, title: String, actTxt: String) {
