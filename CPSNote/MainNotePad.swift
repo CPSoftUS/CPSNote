@@ -19,10 +19,14 @@ struct MainNotePad: View {
 				TextField("Title", text: $title)
 				.lineLimit(1)
 				
+				ModelContext.insert($title)
+				
 			
 				
 					TextField("Note", text: $actTxt, axis: .vertical)
 					.lineLimit(100)
+					
+					modelContext.insert()
 					
 					
 			
